@@ -36,7 +36,8 @@ form.onsubmit = (e)=>{
     for(let i of data){
         if(i.userName == userName){
             if(i.pass == pass){
-                alert("OK")
+                alert("Đăng nhập thành công")
+                window.location.replace("home.html")
                 break
             }
             else{
